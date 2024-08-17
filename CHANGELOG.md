@@ -1,5 +1,73 @@
 # CHANGELOG
 
+## [0.18.0](https://github.com/paradox460/tableau/compare/v0.17.1...v0.18.0) (2024-08-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* uri encode permalink
+* improve slug generation ([#51](https://github.com/paradox460/tableau/issues/51))
+* use DateTimeParser for date property ([#49](https://github.com/paradox460/tableau/issues/49))
+* convert all yaml keys to atoms
+* begin rewrite ([#3](https://github.com/paradox460/tableau/issues/3))
+
+### Features
+
+* allow elixir scripts for data extension ([#25](https://github.com/paradox460/tableau/issues/25)) ([66416c1](https://github.com/paradox460/tableau/commit/66416c1477b61697201cbd9afd6bb1a936c95fe7))
+* allow nested directories of posts ([588a7d4](https://github.com/paradox460/tableau/commit/588a7d401a6ba6c5cea63fcd569b644be6b84e47))
+* arbitrary frontmatter keys in permalink ([2b38b43](https://github.com/paradox460/tableau/commit/2b38b43a0bbe7c56035a1059cdfbea1e9add5831))
+* automatically generate post ids ([#33](https://github.com/paradox460/tableau/issues/33)) ([b5bf6df](https://github.com/paradox460/tableau/commit/b5bf6dfc24a2c83288262c10604a1e86defafe3b))
+* begin rewrite ([#3](https://github.com/paradox460/tableau/issues/3)) ([db2bf94](https://github.com/paradox460/tableau/commit/db2bf943844721a489dcc60f7c46d1053815b4d6))
+* configurable development server root  ([#59](https://github.com/paradox460/tableau/issues/59)) ([641cb20](https://github.com/paradox460/tableau/commit/641cb2062cf146c5c3b66553667d1b933321f75a))
+* convert all yaml keys to atoms ([2bea559](https://github.com/paradox460/tableau/commit/2bea559197198708788e3962a3cfd63915c0f1d8))
+* copy static assets ([ad4281b](https://github.com/paradox460/tableau/commit/ad4281b92969c82b6605235d509e7a21bbbe3fa9))
+* data extension ([#24](https://github.com/paradox460/tableau/issues/24)) ([736da42](https://github.com/paradox460/tableau/commit/736da42d5cea3495942579b68da8349f6aa4e58f))
+* ex_doc ([#4](https://github.com/paradox460/tableau/issues/4)) ([963b4ba](https://github.com/paradox460/tableau/commit/963b4ba1ba46a485ba1b2296d507a91a7e1e613d))
+* extension priority ([#16](https://github.com/paradox460/tableau/issues/16)) ([c6f6444](https://github.com/paradox460/tableau/commit/c6f6444e0e6571990ed8eb9dda85ecbc37e06743))
+* extensions ([#13](https://github.com/paradox460/tableau/issues/13)) ([333437f](https://github.com/paradox460/tableau/commit/333437fa5ddeef29135e0c0070cea0e5140e1f9d))
+* **extensions:** pre-write extensions ([#83](https://github.com/paradox460/tableau/issues/83)) ([12d1c7f](https://github.com/paradox460/tableau/commit/12d1c7f8f0c566fc469e6abb3415c21a3c989b10))
+* extract web dev utils ([#31](https://github.com/paradox460/tableau/issues/31)) ([af98ea8](https://github.com/paradox460/tableau/commit/af98ea843521c4af1fcdc7d52dd131cea92277c0))
+* fall back to first &lt;h1&gt; as title if no title in frontmatter ([#36](https://github.com/paradox460/tableau/issues/36)) ([707f4ef](https://github.com/paradox460/tableau/commit/707f4ef33529507cc41a2728a960ba9b84b12ae1))
+* PageExtension ([162420b](https://github.com/paradox460/tableau/commit/162420b01d313dcf77df2dc0b93b5bfed7357581))
+* pass values from page through to layouts ([996d7de](https://github.com/paradox460/tableau/commit/996d7de2816f679d5e40e76bed81cbf30c5d7da0))
+* post extension ([#22](https://github.com/paradox460/tableau/issues/22)) ([16d1c14](https://github.com/paradox460/tableau/commit/16d1c1428b8d4ca1745adddd221b50ec2467a99b))
+* **posts:** global permalink and layout ([#30](https://github.com/paradox460/tableau/issues/30)) ([c47e9e5](https://github.com/paradox460/tableau/commit/c47e9e5952df91034533eba5d4f1fe8a89b676ab))
+* RSS extension ([#23](https://github.com/paradox460/tableau/issues/23)) ([4d67147](https://github.com/paradox460/tableau/commit/4d67147f931605ae43ecadb6d67630703338eeba))
+* site assign ([#20](https://github.com/paradox460/tableau/issues/20)) ([d766c22](https://github.com/paradox460/tableau/commit/d766c22cc9d01927fde06080db7fd3e44473f745))
+* sitemap extension ([#45](https://github.com/paradox460/tableau/issues/45)) ([f9a97a3](https://github.com/paradox460/tableau/commit/f9a97a3536ba547012882222c39da80eb907addf))
+* switch from cowboy to bandit ([36cccc9](https://github.com/paradox460/tableau/commit/36cccc9c14b1fc8e27f71fdf7629f029d50c3bac))
+* use DateTimeParser for date property ([#49](https://github.com/paradox460/tableau/issues/49)) ([78cb446](https://github.com/paradox460/tableau/commit/78cb446e87a1b9097042d140888fe61406224ed3))
+* use MDEx for markdown ([dea822e](https://github.com/paradox460/tableau/commit/dea822ee8202832652ad5226f07974e2cfd09b94))
+
+
+### Bug Fixes
+
+* add base_path to config schema ([#68](https://github.com/paradox460/tableau/issues/68)) ([03a43d4](https://github.com/paradox460/tableau/commit/03a43d4d9e992d4f9268d482d3cd427a99b3f7e0))
+* always preload modules ([f083b46](https://github.com/paradox460/tableau/commit/f083b46cc425fdf22b8c2685f0b5932360eb3c98))
+* correctly create page modules ([8ea0936](https://github.com/paradox460/tableau/commit/8ea09369396e21f51336eaca05ee64bf57623038))
+* delete obsolete files ([#5](https://github.com/paradox460/tableau/issues/5)) ([12768e2](https://github.com/paradox460/tableau/commit/12768e2fe407e598523afa6e9785220588884db8))
+* **extensions:** don't require a config module ([12d1c7f](https://github.com/paradox460/tableau/commit/12d1c7f8f0c566fc469e6abb3415c21a3c989b10))
+* fix deprecation warnings for Logger.warn/1 ([#10](https://github.com/paradox460/tableau/issues/10)) ([0b13494](https://github.com/paradox460/tableau/commit/0b13494c35628236d152fe780971bec8a7bf8dd3))
+* improve slug generation ([#51](https://github.com/paradox460/tableau/issues/51)) ([bbc702d](https://github.com/paradox460/tableau/commit/bbc702dcaf3fde50d73b851a2df07900400e0ef6))
+* include page/layout behaviour in postlude ([06ef33e](https://github.com/paradox460/tableau/commit/06ef33e26a1c2bd32b2ae4b16be984d15ab0b271))
+* make frontmatter layout optional ([#38](https://github.com/paradox460/tableau/issues/38)) ([b5ae96b](https://github.com/paradox460/tableau/commit/b5ae96b67699aa6db2ae90ec82b7c9787d518b97))
+* only use ex_doc in dev ([ab7d2bc](https://github.com/paradox460/tableau/commit/ab7d2bccfb78dde9d7ab9d55bd7535e460f1ffa6))
+* **posts:** pull correct config key ([0281348](https://github.com/paradox460/tableau/commit/0281348ac4b56597273fa157b8ed1247f6e05e68))
+* properly encode title in rss feed ([#85](https://github.com/paradox460/tableau/issues/85)) ([9382afa](https://github.com/paradox460/tableau/commit/9382afa3ca14149a9fac1b6a4f8b2044d6e0f946))
+* refresh graph after running extensions ([fbb2621](https://github.com/paradox460/tableau/commit/fbb2621ee92d1211faed6c3d21ae6fc07f1c135f))
+* remove unused dep ([d626cb8](https://github.com/paradox460/tableau/commit/d626cb841cb97ed16d94fcfcce1da9453c108fe6))
+* removed dbg from router ([d7961c2](https://github.com/paradox460/tableau/commit/d7961c20cbcef0eedc11ea8565e49dd6d5c6f9a3))
+* rss moduledoc ([#55](https://github.com/paradox460/tableau/issues/55)) ([788f09d](https://github.com/paradox460/tableau/commit/788f09d4c695dbc572fb974da6f71a13aceca372))
+* start telemetry app to handle warning logs ([#62](https://github.com/paradox460/tableau/issues/62)) ([97e1fba](https://github.com/paradox460/tableau/commit/97e1fba6f91f0b7872bcd904b90286572974ce77)), closes [#61](https://github.com/paradox460/tableau/issues/61)
+* typos ([#41](https://github.com/paradox460/tableau/issues/41)) ([8e47467](https://github.com/paradox460/tableau/commit/8e47467ba060891e520d89d51789a502447e7436))
+* uri encode permalink ([3fbc2c7](https://github.com/paradox460/tableau/commit/3fbc2c7ad885209dc1cf92a1265519e59bc96d9f)), closes [#80](https://github.com/paradox460/tableau/issues/80)
+* urls in rss output ([#47](https://github.com/paradox460/tableau/issues/47)) ([66d15d4](https://github.com/paradox460/tableau/commit/66d15d41049fc5e7b72c7d5514c150e401600542))
+
+
+### Performance Improvements
+
+* speed up page and post extensions ([#64](https://github.com/paradox460/tableau/issues/64)) ([357d0f9](https://github.com/paradox460/tableau/commit/357d0f9b2fb46be8cbb87793704a93c92b9130c6)), closes [#48](https://github.com/paradox460/tableau/issues/48)
+
 ## [0.17.1](https://github.com/elixir-tools/tableau/compare/v0.17.0...v0.17.1) (2024-08-16)
 
 
